@@ -7,7 +7,7 @@ def histogram(points, bins):
 
     for i in range(k):
         a, b = bins[i]
-        while pointer <= n and points[pointer] < b:
+        while pointer < n and points[pointer] < b:
             pointer += 1
             binslist[i] += 1
 
