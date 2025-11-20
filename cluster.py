@@ -40,4 +40,4 @@ def cluster(graph, weights, level):
     
       clusters.append(frozenset(current_cluster))
         
-return frozenset(clusters)
+  return frozenset(clusters)
