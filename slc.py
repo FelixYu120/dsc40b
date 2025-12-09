@@ -115,7 +115,7 @@ def slc(graph, d, k):
 
     if not component.in_same_set(u, v):
       component.union(u, v)
-      ckuster_count -= 1
+      cluster_count -= 1
 
   groups = {}
   for node in graph.nodes:
