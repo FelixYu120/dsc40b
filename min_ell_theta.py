@@ -13,7 +13,7 @@ def compute_ell(data, colors, theta):
   for val, color in zip(data, colors):
       if color == "blue" and val > theta:
         wrong += 1
-      else if color == "red" and val <= theta:
+      elif color == "red" and val <= theta:
         wrong += 1
 
   return float(wrong)
