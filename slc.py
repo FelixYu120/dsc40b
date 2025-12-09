@@ -104,7 +104,7 @@ class _DisjointSetForestCore:
 
 
 def slc(graph, d, k):
-  components = DisjointSetForest(graph.nodes)
+  component = DisjointSetForest(graph.nodes)
   cluster_count = len(graph.nodes)
 
   sorted_edges = sorted(graph.edges, key = d)
@@ -114,7 +114,7 @@ def slc(graph, d, k):
       break
 
     if not component.in_same_set(u, v):
-      components.union(u, v)
+      component.union(u, v)
       ckuster_count -= 1
 
   groups = {}
