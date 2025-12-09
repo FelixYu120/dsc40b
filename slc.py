@@ -104,7 +104,7 @@ class _DisjointSetForestCore:
 
 
 def slc(graph, d, k):
-  components = DisjointedSetForest(graph.nodes)
+  components = DisjointSetForest(graph.nodes)
   cluster_count = len(graph.nodes)
 
   sorted_edges = sorted(graph.edges, key = d)
